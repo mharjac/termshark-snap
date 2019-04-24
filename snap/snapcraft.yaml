@@ -1,5 +1,5 @@
 name: termshark
-version: git
+version: '1.0.0'
 summary: A terminal UI for tshark, inspired by Wireshark 
 description: |
   A terminal UI for tshark, inspired by Wireshark.
@@ -7,7 +7,6 @@ description: |
 confinement: strict
 grade: stable
 base: core18
-version: '1.0.0'
 
 parts:
   termshark:
