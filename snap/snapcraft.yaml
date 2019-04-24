@@ -1,0 +1,29 @@
+name: termshark
+version: git
+summary: A terminal UI for tshark, inspired by Wireshark 
+description: |
+  A terminal UI for tshark, inspired by Wireshark.
+
+confinement: strict
+grade: stable
+base: core18
+version: '1.0.0'
+
+parts:
+  termshark:
+    plugin: go
+    go-importpath: github.com/gcla/termshark
+    source: https://github.com/gcla/termshark.git
+    source-type: git
+    source-tag: 'v1.0.0'
+    build-packages:
+      - gcc
+    stage-packages:
+      - tshark
+
+apps:
+  termshark:
+    command: bin/termshark
+    plugs:
+      - network
+
