@@ -25,4 +25,7 @@ apps:
     command: bin/termshark
     plugs:
       - network
-
+      - network-control
+      - docker-support
+      - bluetooth-control
+      - home
