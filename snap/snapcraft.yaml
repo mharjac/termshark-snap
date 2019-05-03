@@ -26,6 +26,9 @@ apps:
     plugs:
       - network
       - network-control
-      - docker-support
+      - ppp
       - bluetooth-control
+      - raw-usb
       - home
+      - firewall-control
+      - removable-media
