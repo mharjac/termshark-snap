@@ -14,7 +14,6 @@ parts:
     go-importpath: github.com/gcla/termshark
     source: https://github.com/gcla/termshark.git
     source-type: git
-    source-tag: 'v1.0.0'
     build-packages:
       - gcc
     stage-packages:
