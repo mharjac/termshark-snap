@@ -1,5 +1,5 @@
 name: termshark
-version: '1.0.0'
+version: '2.0.2'
 summary: A terminal UI for tshark, inspired by Wireshark 
 description: |
   A terminal UI for tshark, inspired by Wireshark.
