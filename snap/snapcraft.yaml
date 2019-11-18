@@ -11,9 +11,16 @@ base: core18
 parts:
   termshark:
     plugin: go
-    go-importpath: github.com/gcla/termshark
     source: https://github.com/gcla/termshark.git
     source-type: git
+    build-environment:
+      - GO111MODULE: 'on'
+    override-pull: |
+        echo "Skipping pull stage."
+    override-build: |
+        mkdir $SNAPCRAFT_PART_INSTALL/bin
+        export GOBIN=$SNAPCRAFT_PART_INSTALL/bin
+        go install github.com/gcla/termshark/v2/cmd/termshark
     build-packages:
       - gcc
     stage-packages:
