@@ -1,5 +1,5 @@
 name: termshark
-version: '2.1.1'
+version: '2.2.0'
 summary: A terminal UI for tshark, inspired by Wireshark 
 description: |
   A terminal UI for tshark, inspired by Wireshark.
@@ -20,7 +20,7 @@ parts:
     override-build: |
         mkdir $SNAPCRAFT_PART_INSTALL/bin
         export GOBIN=$SNAPCRAFT_PART_INSTALL/bin
-        go get github.com/gcla/termshark/v2/cmd/termshark@b59be9c4e73c5271d93318cb4bd4b162a83ec312
+        go get github.com/gcla/termshark/v2/cmd/termshark@88f03745cb23eb6aae02a1e2d0c6dc361d23db86
     build-packages:
       - gcc
     stage-packages:
